@@ -133,7 +133,7 @@ export default function HeroSection() {
             Comienza ahora
             <ArrowRight size={18} className="ml-2 transition-transform group-hover:translate-x-1" />
           </Button>
-          <Button variant="outline" href="#casos-de-exito" className="text-base px-8 py-4">
+          <Button variant="outline" href="#servicios" className="text-base px-8 py-4">
             Conoce nuestro trabajo
           </Button>
         </motion.div>
