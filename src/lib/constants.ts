@@ -147,6 +147,5 @@ export const FOOTER_COMPANY = [
 
 export const FOOTER_CONTACT = {
   email: "contact@clickrick.ai",
-  phone: "+52 (55) 1234-5678",
   address: "Ciudad de México, México",
 };

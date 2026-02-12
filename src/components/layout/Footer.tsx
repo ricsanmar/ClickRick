@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import {
   FOOTER_SERVICES,
   FOOTER_COMPANY,
@@ -90,15 +90,6 @@ export default function Footer() {
                 >
                   <Mail size={14} className="text-dark-600 flex-shrink-0" />
                   {FOOTER_CONTACT.email}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`tel:${FOOTER_CONTACT.phone}`}
-                  className="flex items-center gap-2.5 text-sm text-dark-500 transition-colors hover:text-dark-300"
-                >
-                  <Phone size={14} className="text-dark-600 flex-shrink-0" />
-                  {FOOTER_CONTACT.phone}
                 </a>
               </li>
               <li>
