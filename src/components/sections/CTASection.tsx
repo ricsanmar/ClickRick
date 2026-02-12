@@ -84,7 +84,7 @@ export default function CTASection() {
               className="mt-10"
             >
               <a
-                href="mailto:contact@clickrick.ai"
+                href="https://cal.com/clickrick/30min"
                 className="group inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-brand-700 transition-all duration-300 hover:bg-white/95 hover:shadow-[0_0_40px_rgba(255,255,255,0.15)]"
               >
                 Agenda una consulta gratuita

@@ -129,7 +129,7 @@ export default function HeroSection() {
           transition={{ delay: 1.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
         >
-          <Button variant="primary" href="#contacto" className="text-base px-8 py-4 group">
+          <Button variant="primary" href="https://cal.com/clickrick/30min" className="text-base px-8 py-4 group">
             Comienza ahora
             <ArrowRight size={18} className="ml-2 transition-transform group-hover:translate-x-1" />
           </Button>
