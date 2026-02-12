@@ -55,7 +55,7 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <Button variant="primary" href="https://cal.com/clickrick/30min" className="text-[13px] px-5 py-2.5"
+            <Button variant="primary" href="https://cal.com/clickrick/30min" className="text-[13px] px-5 py-2.5">
               Comienza ahora
             </Button>
           </div>

@@ -32,6 +32,7 @@ export default function Button({
     return (
       <a
         href={href}
+        {...(href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         className={`${baseStyles} ${variantStyles[variant]} ${className}`}
       >
         {children}
