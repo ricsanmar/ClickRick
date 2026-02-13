@@ -60,11 +60,16 @@ export default function ServicesSection() {
                       {service.description}
                     </p>
 
-                    {/* Hover arrow */}
-                    <div className="flex items-center gap-1 text-brand-400 opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-300">
-                      <span className="text-xs font-medium">Saber m&aacute;s</span>
+                    {/* Hover CTA */}
+                    <a
+                      href="https://cal.com/clickrick/30min"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-brand-400 hover:text-brand-300 opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-300"
+                    >
+                      <span className="text-xs font-medium">Agendar consulta</span>
                       <ArrowUpRight size={14} />
-                    </div>
+                    </a>
                   </div>
                 </div>
               </motion.div>
