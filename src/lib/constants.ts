@@ -11,7 +11,8 @@ export const NAV_LINKS = [
   { label: "Servicios", href: "#servicios" },
   { label: "Nosotros", href: "#nosotros" },
   { label: "Casos de Éxito", href: "#casos-de-exito" },
-  { label: "Testimonios", href: "#testimonios" },
+  // TODO: Unhide when real testimonials are available
+  // { label: "Testimonios", href: "#testimonios" },
   { label: "Contacto", href: "#contacto" },
 ];
 
