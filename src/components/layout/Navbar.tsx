@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
@@ -10,6 +10,34 @@ import Button from "@/components/ui/Button";
 export default function Navbar() {
   const { isScrolled } = useScrollPosition();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
+
+  const handleMobileNavClick = useCallback(
+    (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+      e.preventDefault();
+      setIsMobileMenuOpen(false);
+
+      // Wait for menu close animation to finish, then scroll
+      setTimeout(() => {
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300);
+    },
+    []
+  );
 
   return (
     <nav
@@ -90,7 +118,7 @@ export default function Navbar() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.05 }}
                   className="block py-2.5 text-dark-300 transition-colors hover:text-white text-[15px]"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => handleMobileNavClick(e, link.href)}
                 >
                   {link.label}
                 </motion.a>
