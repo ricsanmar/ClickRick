@@ -117,7 +117,12 @@ export default function CaseStudiesSection() {
                   </p>
 
                   {/* Result */}
-                  <div className="mt-5 pt-4 border-t border-white/[0.04] flex items-center justify-between">
+                  <a
+                    href="https://cal.com/clickrick/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-5 pt-4 border-t border-white/[0.04] flex items-center justify-between"
+                  >
                     <span className="text-sm font-semibold text-accent-green">
                       {study.result}
                     </span>
@@ -125,7 +130,7 @@ export default function CaseStudiesSection() {
                       size={16}
                       className="text-dark-500 group-hover:text-brand-400 group-hover:translate-x-1 transition-all duration-300"
                     />
-                  </div>
+                  </a>
                 </div>
               </motion.article>
             );
